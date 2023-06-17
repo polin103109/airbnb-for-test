@@ -16,6 +16,11 @@ body {
     font-family: var(--font)
 }
 
+ol,
+ul {
+    padding-left: 0;
+}
+
 .text-red {
     color: var(--red);
 }
@@ -26,6 +31,10 @@ body {
 
 .text-light-grey {
     color: var(--light-grey);
+}
+
+.text-bold {
+    font-weight: 600;
 }
 
 .bg-red {
@@ -209,8 +218,10 @@ img {
 
 /* image gallery section end */
 
-/* property specs with rent section start */
-.property-specs {}
+/* property specs with rent section start
+.property-specs{
+
+} */
 
 .property-specs .specs-title {
     font-size: 22px;
@@ -339,3 +350,167 @@ img {
 }
 
 /* property host information end  */
+
+/* <!-- pricing section start */
+
+.pricing-card {
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+}
+
+.pricing-card-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-in-checkout {
+    width: 100%;
+    border: 1px solid var(--dark-grey);
+    border-radius: 8px;
+
+}
+
+.check-in-checkout-top {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.check-in-checkout-bottom {
+    font-size: 10px !important;
+    text-transform: uppercase;
+    padding: 18px 12px 10px !important;
+}
+
+.check-in {
+    font-size: 10px !important;
+    text-transform: uppercase;
+    padding: 18px 12px 10px !important;
+    border-bottom: 1px solid var(--dark-grey);
+    border-right: 1px solid var(--dark-grey);
+}
+
+.checkout {
+    font-size: 10px !important;
+    text-transform: uppercase;
+    padding: 18px 12px 10px !important;
+    border-bottom: 1px solid var(--dark-grey);
+
+}
+
+.c-subtitle {
+    font-size: 14px !important;
+}
+
+.check-btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 45px;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* <!-- pricing section end */
+
+/* <!-- footer section start */
+footer {
+    width: 100%;
+    border-top: 1px solid var(--dark-grey);
+    background-color: rgb(247, 247, 247) !important;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+footer p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer ul li {
+    list-style: none;
+    margin-top: 16px;
+}
+
+footer ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(34, 34, 34) !important;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* <!-- footer section end */
+
+
+/* small mobile :320px. */
+@media(max-width: 767px) {
+    .navigation{
+        display: none!important;
+    }
+    .share{
+        display:none!important;
+    }
+    .image-gallery .grid-img-gallery img {
+        height: 75px;
+        margin-bottom: 10px;
+    }
+    
+    .big-img-gallery {
+        height: 160px;
+    } 
+    
+    .big-img-gallery img {
+        height: 160px;
+        border-radius: 10px 0 0 10px;
+    }
+    .image-gallery .grid-img-gallery img:nth-child(2) {
+        border-radius: 0px 10px 0px 0px;
+    }
+    .image-gallery .grid-img-gallery img:nth-child(4) {
+        border-radius: 0px 0px 10px 0px;
+    }
+    .specs-items .item {
+        height: 70px;
+        flex-direction: column;
+    }
+    .host-card {
+        width: 90%;
+    }
+    .profile-card .host-pic {
+        width: 90px;
+        height: 90px;
+        position: relative;
+    }
+    .profile-card .host-pic img {
+        width: 90px;
+        height: 90px;
+    }
+    .profile-card .host-badge {
+        width: 30px;
+        height: 30px;
+    }
+    .profile-card .host-name{
+        font-size: 25px;
+    }
+    footer {
+        margin-top: 4rem;
+        width: 100%;
+        overflow: hidden;
+        padding: 40px 20px;
+        height: auto;
+    }
+}
