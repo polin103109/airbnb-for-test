@@ -1,6 +1,6 @@
 ## PROJECT DESCRIPTION
 
-The current implementation of the project is based on HTML and Bootstrap CSS.This website is mobile and different device responsive. But it can be improved by transitioning to a single-page application using React. There is a variety of functionalities which can triggered by clicking on an icon or seraching for a specific field. These all actions/functionalities can be done using react. By using React, code optimization,code reusability will be increased and website will be more handy. This project is a clone of the given project.I have used custom css stylesheet for more design in this project.This project can also be build based on Tailwind CSS.
+The current implementation of the project is based on HTML and Bootstrap CSS.This website is mobile and different device fully responsive. This is now a static website but by the time I will make this website dynamic ny using react. There is a variety of functionalities which can triggered by clicking on an icon or seraching for a specific field in the original website. These all actions/functionalities can be done using react. By using React, code optimization,code reusability will be increased and website will be more handy. This project is a clone of the given project.I have used custom css stylesheet for more design in this project.This project can also be build based on Tailwind CSS.
 
 ## 💻 Tech Stack
 
@@ -16,7 +16,7 @@ The current implementation of the project is based on HTML and Bootstrap CSS.Thi
 git clone
 ```
 
-Live Project Demo:
+## Live Project Demo:
 
 # Author
 
@@ -25,5 +25,3 @@ Live Project Demo:
 - Hasibul Islam
   - `Linkedin` [sabrina sharmin](https://www.linkedin.com/in/sabrina-sharmin-937a441a7/)
   - `Facebook` [Sabrina Sharmin](https://www.facebook.com/sharmin.polin/)
-- Reference Link
-  - `YouTube` [Click Here](https://youtu.be/mqUN4N2q4qY)

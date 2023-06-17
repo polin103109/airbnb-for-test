@@ -453,6 +453,10 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
+.profile-detail[class][class] {
+    padding-top: 3px;
+}
+
 /* <!-- footer section end */
 
 
@@ -514,3 +518,28 @@ footer ul li a:hover {
         height: auto;
     }
 }
+.profile-detail-box[class][class] {
+    align-items: flex-start;
+    display: flex;
+    gap: 14px;
+}
+.profile-detail[class][class] {
+    padding-top: 3px;
+   
+}
+.total-profile {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+    }
+.profile-footer[class][class] {
+        padding-top: 20px;
+    }
+    .description{
+        padding-top: 48px; 
+        padding-bottom: 48px;
+    }
+    
+
+    
