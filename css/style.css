@@ -9,7 +9,7 @@
     --dark-grey: #B0B0B0;
     --light: #F7F7F7;
     --white: #fff;
-    --nav-box-shadow:0 2px 4px rgba(0,0,0,0.18);
+    --nav-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
 }
 
 body {
@@ -39,10 +39,12 @@ img {
 .light-bt-border {
     border-bottom: 1px solid var(--light-grey);
 }
-.ml-2{
+
+.ml-2 {
     margin-left: 0.5rem;
 }
-.ml-4{
+
+.ml-4 {
     margin-left: 1rem;
 }
 
@@ -110,10 +112,12 @@ img {
     height: 42px;
     color: #717171;
 }
-.navigation .menu:hover{
+
+.navigation .menu:hover {
     box-shadow: var(--nav-box-shadow);
 }
-.navigation .search{
+
+.navigation .search {
     width: 300px;
     height: 48px;
     display: flex;
@@ -122,17 +126,20 @@ img {
     background-color: var(--white);
     border: 1px solid var(--dark-grey);
     border-radius: 40px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 0 5px 0 16px;
     cursor: pointer;
 }
-.navigation .search:hover{
+
+.navigation .search:hover {
     box-shadow: var(--nav-box-shadow);
 }
-.navigation .search .search-placeholder{
+
+.navigation .search .search-placeholder {
     font-size: 14px;
 }
-.navigation .search .search-icon{
+
+.navigation .search .search-icon {
     width: 32px;
     height: 32px;
     color: var(--white);
@@ -146,71 +153,83 @@ img {
 /* top navigation end */
 
 /* title and reviews count section start */
-.title-section{
+.title-section {
     padding-top: 24px;
 }
-.post-title{
+
+.post-title {
     font-size: 26px;
     font-weight: 600;
 }
-.reviews-share{
-    font-size: 14px ;
+
+.reviews-share {
+    font-size: 14px;
 }
+
 /* title and reviews count section end */
 
 /* image gallery section start */
-.image-gallery{
+.image-gallery {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;
 }
-.big-img-gallery{
+
+.big-img-gallery {
     width: 100%;
     height: 360px;
 }
+
 .big-img-gallery img {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
-.image-gallery .grid-img-gallery{
+
+.image-gallery .grid-img-gallery {
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 10px;
 }
-.image-gallery .grid-img-gallery img{
+
+.image-gallery .grid-img-gallery img {
     width: 100%;
     height: 170px;
     object-fit: cover;
 }
-.image-gallery .grid-img-gallery img:nth-child(2){
+
+.image-gallery .grid-img-gallery img:nth-child(2) {
     border-radius: 0px 20px 0px 0px;
 }
-.image-gallery .grid-img-gallery img:nth-child(4){
+
+.image-gallery .grid-img-gallery img:nth-child(4) {
     border-radius: 0px 0px 20px 0px;
 }
+
 /* image gallery section end */
 
 /* property specs with rent section start */
-.property-specs{
+.property-specs {}
 
-}
-.property-specs .specs-title{
+.property-specs .specs-title {
     font-size: 22px;
     font-weight: 600;
 }
-.property-specs .host-pic img{
+
+.property-specs .host-pic img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.specs-items{
+
+.specs-items {
     display: grid;
     grid-template-columns: auto auto auto;
     column-gap: 10px;
 }
-.specs-items .item{
+
+.specs-items .item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,16 +238,104 @@ img {
     height: 88px;
 
 }
-.specs-list-item{
+
+.specs-list-item {
     display: flex;
 }
-.specs-list-item .specs-list-item-icon{
+
+.specs-list-item .specs-list-item-icon {
     margin-right: 15px;
-    
+
 }
-.specs-list-item .list-item .title{
+
+.specs-list-item .list-item .title {
     font-size: 16px !important;
     font-weight: 600;
     margin-bottom: 4px;
 }
+
 /* property specs with rent section end */
+
+
+/* property host information start  */
+.host-info {
+    width: 100%;
+    background-color: var(--light-grey);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.host-card {
+    width: 60%;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 32px 24px;
+    border-radius: 24px;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card .host-pic-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card .host-pic {
+    width: 105px;
+    height: 105px;
+    position: relative;
+}
+
+.profile-card .host-pic img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+}
+
+.profile-card .host-badge {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+    bottom: 5px;
+    right: 0;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.profile-card .host-name {
+    font-size: 31.9px;
+    font-weight: 600;
+}
+
+.profile-card .host-designation {
+    font-size: 14px;
+}
+
+.profile-card .rating-box {
+    width: 100px;
+}
+
+.profile-card .rating-box .rating {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.profile-card .rating-box .rating-sub-title {
+    font-size: 10px;
+}
+
+/* property host information end  */
